@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.banner {
+    width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .banner-img {
+    width: 100%;
+    position: relative;
+}
+
+.banner .banner-overlay {
+    background: #c314315d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b3691, #c314315d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b3691, #c314315d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner .circle-box {
+    width: 1100px;
+    height: 1100px;
+    position: absolute;
+    top: 50%;
+    left: -.5%;
+    transform: translate(-50%, -50%);
+}
+
+.banner .circle-box .big-circle {
+    width: 1100px;
+    height: 1100px;
+    border: 2px solid white;
+    border-radius: 100%;
+    opacity: .2;
+    position: relative;
+}
+
+.banner .circle-box .big-circle .circle {
+    width: 700px;
+    height: 700px;
+    border: 2px solid white;
+    border-radius: 100%;
+    position: absolute;
+    opacity: .3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner .circle-box .big-circle .circle .nested-circle {
+    width: 450px;
+    height: 450px;
+    border: 1px solid white;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .7;
+}
+
+.banner .banner-text-container {
+    width: 50vw;
+    height: 100vh;
+    /* background-color: rgba(255, 255, 255, 0.164); */
+    position: absolute;
+    top: 0%;
+}
+
+.banner .banner-text-container .text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.banner .banner-text-container .text-box .first-name {
+    font-size: 130px;
+    letter-spacing: 10px;
+    color: white;
+    font-weight: 200;
+    text-transform: uppercase;
+    line-height: .5em;
+}
+
+.banner .banner-text-container .text-box .last-name {
+    font-size: 100px;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.banner .banner-text-container .text-box hr {
+    border: 2px solid rgba(255, 0, 0, 0.438);
+    width: 175px;
+    left: 9px;
+    position: relative;
+    top: -10px;
+}
+
+.banner .banner-text-container .text-box .job-title {
+    font-size: 30px;
+    position: relative;
+    left: 9px;
+    color: white;
+    top: -5px;
+}
